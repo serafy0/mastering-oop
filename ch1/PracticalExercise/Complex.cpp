@@ -24,6 +24,7 @@ float Complex::getImag()
 
 void Complex::print()
 {
+
     if (imag < 0)
     {
         cout << real << " - " << fabs(imag) << "i" << endl;
