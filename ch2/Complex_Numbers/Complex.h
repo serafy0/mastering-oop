@@ -15,6 +15,8 @@ public:
 
     Complex add(Complex c);
     Complex sub(Complex c);
+    void setComplex(int r, int i);
+    void setComplex(int v);
 };
 
 #endif

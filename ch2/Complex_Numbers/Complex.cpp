@@ -50,3 +50,14 @@ Complex Complex::sub(Complex c)
     temp.imag = c.imag - imag;
     return temp;
 }
+
+void Complex::setComplex(int r, int i)
+{
+    real = r;
+    imag = i;
+}
+
+void Complex::setComplex(int v)
+{
+    real = imag = v;
+}
