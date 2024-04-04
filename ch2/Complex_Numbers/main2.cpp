@@ -5,10 +5,9 @@ using namespace std;
 int main()
 {
 
-    Complex c, d;
-    c.setComplex(3, 5);
-    c.print();
-    d.setComplex(5);
-    d.print();
+    Complex c1;
+    Complex c2(3);
+    Complex c3(3, 4);
+
     return 0;
 }
