@@ -108,7 +108,3 @@ Complex Complex::operator++(int)
     real++;
     return temp;
 }
-float Complex::operator=(float)
-{
-    return real;
-}
