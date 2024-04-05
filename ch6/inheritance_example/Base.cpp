@@ -2,6 +2,8 @@ class Base
 {
 private:
     int a;
+
+protected:
     int b;
 
 public:
