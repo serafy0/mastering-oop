@@ -69,3 +69,46 @@ Complex addTo(float v, Complex c)
     b.real = c.real + v;
     return b;
 }
+
+Complex operator+(float x, Complex c)
+{
+    Complex b;
+    b.real = c.real + x;
+    b.imag = c.imag;
+    return b;
+}
+
+Complex Complex::operator+(float x)
+{
+    Complex b;
+    b.real = real + x;
+    b.imag = imag;
+
+    return b;
+}
+
+Complex Complex::operator+(Complex c)
+{
+    Complex b;
+    b.real = real + c.real;
+    imag = imag + c.imag;
+
+    return b;
+}
+
+Complex Complex::operator++()
+{
+    ++real;
+    return *this;
+}
+
+Complex Complex::operator++(int)
+{
+    Complex temp = *this;
+    real++;
+    return temp;
+}
+float Complex::operator=(float)
+{
+    return real;
+}

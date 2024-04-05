@@ -45,6 +45,12 @@ public:
     void setComplex(int r, int i);
     void setComplex(int v);
     friend Complex addTo(float v, Complex c);
+
+    Complex operator+(Complex c);
+    Complex operator+(float x);
+    friend Complex operator+(float x, Complex c);
+    Complex operator++();    // prefix
+    Complex operator++(int); // postfix
 };
 
 #endif
