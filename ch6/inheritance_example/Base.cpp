@@ -42,4 +42,9 @@ public:
     {
         return a * b;
     }
+
+    int product()
+    {
+        return a * b;
+    }
 };

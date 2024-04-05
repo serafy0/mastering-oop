@@ -31,4 +31,10 @@ public:
         // return a * b * c;
         return productAB() * c;
     }
+
+    int product()
+    {
+        return getA() * b * c;
+        return Base::product() * c;
+    }
 };
