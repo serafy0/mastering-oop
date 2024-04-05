@@ -16,6 +16,8 @@ public:
     void push(int);
     int pop();
 
+    Stack &operator=(const Stack &s);
+
     static int getCounter();
     friend void viewContent(Stack x);
 };
@@ -84,6 +86,21 @@ int Stack::counter = 0;
 int Stack::getCounter()
 {
     return counter;
+}
+
+Stack &Stack::operator=(const Stack &s)
+{
+    delete[] this->st;
+    this->tos = s.tos;
+    this->size = s.size;
+    this->st = new int[size];
+
+    for (int i = 0; i < size; i++)
+    {
+        this->st[i] = s.st[i];
+    }
+
+    return *this;
 }
 
 void viewContent(Stack x)

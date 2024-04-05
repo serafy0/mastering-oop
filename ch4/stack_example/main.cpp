@@ -2,34 +2,22 @@
 #include "Stack.cpp"
 using namespace std;
 
-Stack &getStack()
-{
-    Stack a;
-    return a;
-}
 int main()
 {
 
-    Stack s1(2);
-    s1.push(5);
+    Stack s1(3);
+    Stack s2(2);
+    Stack s3(5);
 
-    s1.push(14);
-    // s1.push(20);
+    s1.push(13);
+    s1.push(13);
 
-    // cout << s1.pop() << endl;
+    s2 = s1;
+    // s2 = s1 = s3;
 
-    // cout << s1.pop() << endl;
-    // cout << s1.pop() << endl;
+    viewContent(s1);
+    viewContent(s3);
+    viewContent(s2);
 
-    Stack s2;
-    s2.push(3);
-    cout << "counter: " << Stack::getCounter() << endl;
-
-    Stack s(3);
-    s.push(13);
-    viewContent(s);
-    Stack s3(getStack());
-
-    cout << "counter: " << Stack::getCounter() << endl;
     return 0;
 }
