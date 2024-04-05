@@ -21,5 +21,11 @@ int main()
     s2.push(3);
     cout << "counter: " << Stack::getCounter() << endl;
 
+    Stack *s3 = &s2;
+
+    s3->Stack::push(13);
+    cout << s2.pop() << endl;
+    cout << "counter: " << Stack::getCounter() << endl;
+
     return 0;
 }
