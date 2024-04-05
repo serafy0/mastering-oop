@@ -2,6 +2,11 @@
 #include "Stack.cpp"
 using namespace std;
 
+Stack &getStack()
+{
+    Stack a;
+    return a;
+}
 int main()
 {
 
@@ -23,6 +28,8 @@ int main()
     Stack s(3);
     s.push(13);
     viewContent(s);
+    Stack s3(getStack());
+
     cout << "counter: " << Stack::getCounter() << endl;
     return 0;
 }
