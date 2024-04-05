@@ -13,7 +13,7 @@ int main()
     s1.push(13);
 
     s2 = s1;
-    // s2 = s1 = s3;
+    s2 = s3 = s1;
 
     viewContent(s1);
     viewContent(s3);
